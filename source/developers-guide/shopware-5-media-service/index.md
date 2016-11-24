@@ -54,7 +54,7 @@ Simply get the `shopware_media.media_service` from the DI container and call `ge
 To generate your thumbnail URLs you need to use the same function, but with different path. You need to add the "thumbnails" subdirectory to get the correct thumbnail URL.
 
 ```php
-$thumbnailPath = 'media/image/thumbnails/my-fancy-image_540x540.png
+$thumbnailPath = 'media/image/thumbnails/my-fancy-image_540x540.png';
 $url = $mediaService->getUrl($thumbnailPath);
 // result: https://www.myshop.com/media/image/d6/30/f2/my-fancy-image_540x540.png
 ```
